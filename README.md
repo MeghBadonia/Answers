@@ -100,3 +100,169 @@ component used for circuitry.
 | **Processing Power** | Increased capacity compared to vacuum tubes. | Massive increase in processing power, leading to the development of mini-computers. |
 | **Cost** | Lower cost than vacuum tube systems. | Initially expensive, but the efficiency and miniaturization made computing more accessible and scalable. |
 | **Impact** | Laid the groundwork for modern electronics. | Led directly to the development of minicomputers and established the industry standard of integrated circuits. |
+
+
+***
+
+## UNIT - 2 Answers for Self-Assessment Questions (MCQs)
+
+Based on standard computer science principles and the provided key, here are the correct answers:
+
+1. **Which of the following is NOT an input device?**
+   **(d) Speaker** (Speakers are output devices.)
+
+2. **The additional RAM chips which plug into special sockets on the motherboard are known as**
+   **(a) SIMMs** (Single In-line Memory Modules)
+
+3. **CRT stands for …………………**
+   **(b) Cathode ray tube**
+
+4. **Which of the following memories must be refreshed many times per second?**
+   **(d) Dynamic RAM (DRAM)** (DRAM stores data using capacitors that leak charge, requiring constant refreshing.)
+
+5. **The main memory of the computer is-**
+   **(a) Internal** (RAM is physically integrated within the computer unit.)
+
+6. **In which storage device, recording is done by burning tiny pits on a circular disk?**
+   **(d) Optical disk** (CD, DVD, Blu-ray technology uses pits and lands.)
+
+7. **Which of the following can be an output by a computer?**
+   **(d) All of these** (Computers can output visual, textual, and auditory data.)
+
+8. **Daisy wheel printer is a type of**
+   **(b) Impact printer** (These printers physically strike an inked ribbon.)
+
+9. **The memory which is programmed at the time it is manufactured is**
+   **(a) ROM** (Read-Only Memory.)
+
+10. **Continuous line drawings are produced using**
+    **(c) plotters** (Plotters are specialized machines designed for high-precision, continuous output of large drawings.)
+
+11. **The two types of primary memory are**
+    **(b) ROM and RAM** (These are the two primary types of volatile/non-volatile local memory.)
+
+12. **Memory is**
+    **(b) The device where information is stored** (While it does a sequence of operations, its fundamental definition is the storage location.)
+
+13. **The QWERTY keyboard**
+    **(a) is the most popular keyboard**
+
+14. **The linkage between the CPU and users is provided by**
+    **(c) peripheral devices** (While software is the functional link, in the context of physical interaction and data input/output, peripheral devices are the mandatory physical linkage.)
+
+15. **_____________ acts as a high-speed buffer between CPU and main memory and is used to temporarily store very active data and instructions during processing.**
+    **(c) Cache memory**
+
+***
+
+## 🧠 Review Questions (Detailed Answers)
+
+### 1. Define Primary memory? Explain the difference between RAM and ROM?
+
+**Definition of Primary Memory:**
+Primary memory (or main memory) is the computer's physical workspace. It is directly accessible by the CPU and is responsible for holding data and instructions that the computer is currently using or actively processing. It is 
+essential for the CPU to fetch instructions and operands.
+
+**Difference between RAM and ROM:**
+
+| Feature | Random Access Memory (RAM) | Read-Only Memory (ROM) |
+| :--- | :--- | :--- |
+| **Definition** | Volatile memory; data is lost when power is removed. | Non-volatile memory; data is retained even without power. |
+| **Purpose** | Holds the operating system, active programs, and data currently being worked on. | Holds essential startup firmware (like BIOS/UEFI) required to boot the computer. |
+| **Read/Write Cycle** | Both reading and writing are done frequently. | Primarily read-only (although some types, like EEPROM, can be erased and rewritten). |
+| **Speed** | Very fast, but slightly slower than Cache. | Very fast, highly reliable. |
+| **Cost/Capacity** | Relatively expensive, high capacity. | Less expensive for small capacity, low modification capacity. |
+
+### 2. What is secondary storage? How does it differ from primary storage?
+
+**Definition of Secondary Storage:**
+Secondary storage refers to external, non-volatile storage devices used to store large amounts of data and programs permanently. They do not directly interact with the CPU for processing; instead, they transfer data to primary 
+memory when needed.
+
+**Differences from Primary Storage:**
+
+| Feature | Primary Storage (RAM, Cache) | Secondary Storage (HDD, SSD, USB) |
+| :--- | :--- | :--- |
+| **Volatility** | RAM is volatile (data lost without power). | Non-volatile (data retained without power). |
+| **Speed** | Extremely fast (required for continuous CPU operation). | Relatively slow compared to RAM/Cache (bottleneck). |
+| **Purpose** | Temporary working space for active data and instructions. | Permanent, long-term storage archive. |
+| **Cost/Capacity** | High cost per bit; limited capacity. | Low cost per bit; very large capacity. |
+| **Access** | Direct and continuous CPU access. | Requires an operating system command (I/O operation) to transfer data. |
+
+### 3. Define memory and its types.
+
+**Definition of Memory:**
+In computing, memory is the hardware component or system that provides temporary or permanent storage space for data, instructions, and configurations, allowing the computer system to retain information for future use or active 
+processing.
+
+**Types of Memory (Categorization by Function/Hierarchy):**
+
+1. **Primary Memory (Main Memory):**
+    *   **RAM:** Working memory for currently running tasks.
+    *   **ROM:** Permanent startup instructions (firmware).
+    *   **Cache:** Small, high-speed memory located closest to the CPU.
+
+2. **Secondary Storage (Auxiliary Storage):**
+    *   **Magnetic Disks:** Hard Disk Drives (HDD).
+    *   **Optical Disks:** CDs, DVDs, Blu-ray.
+    *   **Solid State Drives (SSD):** Uses flash memory chips for faster, reliable storage.
+
+3. **Tertiary Storage (Off-line Storage):**
+    *   High-capacity storage used for archiving and backups (e.g., large tape libraries).
+
+### 4. Discuss the difference between SRAM and DRAM?
+
+SRAM (Static Random-Access Memory) and DRAM (Dynamic Random-Access Memory) are both types of primary volatile memory, but they differ significantly in their internal structure, performance, and use.
+
+| Feature | SRAM (Static RAM) | DRAM (Dynamic RAM) |
+| :--- | :--- | :--- |
+| **Technology** | Uses latches (flip-flops) to store each bit. | Uses capacitors and transistors to store each bit. |
+| **Speed** | Extremely fast access times. | Slower than SRAM due to the refresh cycle. |
+| **Refresh Cycle** | Does **not** require periodic refreshing. | Requires constant, periodic refreshing (DRAM Controller) to prevent data loss. |
+| **Complexity** | More complex circuit design. | Simpler circuit design. |
+| **Power Consumption** | Higher power consumption. | Lower power consumption. |
+| **Cost & Density** | Expensive, lower density (takes up more physical space). | Less expensive, high density (more bits packed into a smaller space). |
+| **Typical Use** | Used for CPU Cache memory (Level 1, 2, and 3). | Used for the main system RAM sticks (DIMMs). |
+
+### 5. Explain the different I/O devices used in a computer system? Why are I/O devices necessary for a computer system?
+
+**I/O (Input/Output) Devices:**
+These devices facilitate the two-way communication channel between the computer's central processing unit (CPU) and the outside world (the user or other systems).
+
+**Categories and Examples:**
+
+1. **Input Devices (Get data *into* the system):**
+    *   **Keyboard:** Converts physical keystrokes into binary signals.
+    *   **Mouse/Trackpad:** Converts physical movement into coordinate data.
+    *   **Scanner:** Converts physical images/documents into digital pixel data.
+    *   **Microphone:** Converts sound waves into digital audio signals.
+2. **Output Devices (Present data *from* the system):**
+    *   **Monitor/Display:** Converts digital signals into visible light/graphics.
+    *   **Printer:** Converts digital data into physical hard copies (text/images).
+    *   **Speakers:** Converts digital audio signals into sound waves.
+3. **Input/Output Devices (Both roles):**
+    *   **Touchscreen:** Can both register touch (input) and display graphics (output).
+    *   **Network Card:** Sends and receives data over a network connection.
+
+**Why are I/O Devices Necessary?**
+I/O devices are crucial because they provide the **interface** necessary for a computer system to be useful. Without them:
+1. **The system would be isolated:** The CPU and RAM could process data, but they would have no way to receive instructions or display results to the human user.
+2. **Human-Computer Interaction (HCI):** They bridge the gap between the abstract world of binary code (0s and 1s) and the physical, real world of humans (visual images, sound, keystrokes).
+
+### 6. Why are I/O devices very slow as compared to the speed of primary storage and CPU?
+
+I/O devices are inherently much slower than the speed of the CPU and primary RAM due to **latency** and the **physical nature** of the data transfer.
+
+**Key Reasons for Slowness:**
+
+1. **Physical Movement (Mechanical Latency):**
+    *   Devices like hard disk drives (HDDs) must physically spin platters and move read/write heads to the correct location. This mechanical movement takes time (milliseconds) compared to the electrical signal travel time within 
+a CPU (nanoseconds).
+    *   Printers (especially traditional ones) require physical movement of print heads and paper feeding.
+2. **Protocol and Conversion:**
+    *   The CPU operates using extremely fast, native electrical signals. I/O devices, however, deal with different physical forms (analog signals from microphones, light signals from monitors, or complex electrical signaling over 
+cables).
+    *   The computer must employ complex **controllers** (software and hardware circuits) to translate and manage these different signals, which adds significant overhead.
+3. **Data Transfer Bottleneck:**
+    *   Data must travel through physical buses (e.g., USB, PCIe). The limitations and speeds of these physical pathways often create a bottleneck, slowing down the overall rate at which data can be retrieved or written, even if 
+the underlying processor is extremely fast.
