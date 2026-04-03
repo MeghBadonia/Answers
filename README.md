@@ -266,3 +266,61 @@ cables).
 3. **Data Transfer Bottleneck:**
     *   Data must travel through physical buses (e.g., USB, PCIe). The limitations and speeds of these physical pathways often create a bottleneck, slowing down the overall rate at which data can be retrieved or written, even if 
 the underlying processor is extremely fast.
+
+***
+
+## UNIT - 3 Answers for Self-Assessment Questions (MCQs)
+
+You have correctly identified the answers for all questions. Here is a summary and explanation for maximum clarity.
+
+| Q No. | Concept Tested | Correct Answer | Explanation |
+| :--- | :--- | :--- | :--- |
+| **1.** | Data processing goal | **(B) Information** | Data is raw facts; processing turns it into meaningful information. |
+| **2.** | Primary data storage | **(A) Secondary Storage** | Hard drives, SSDs, and tapes are used for long-term, secondary storage. |
+| **3.** | Data processing stages | **(D) Input $\rightarrow$ Processing $\rightarrow$ Output** | This is the fundamental cycle of all computing systems. |
+| **4.** | Processing function | **(B) Transform Data into Information** | The core job of the CPU/software is to manipulate raw data. |
+| **5.** | Data organization | **(D) Database** | A database is a structured collection of related data, managed by a DBMS. |
+| **6.** | Data value | **(A) Context** | Without context (who, what, when), raw data has little value. |
+| **7.** | Data structure | **(C) Schema** | The schema defines the blueprint, rules, and relationships within the data. |
+| **8.** | Data governance | **(B) Policies and Procedures** | Governance provides the rules to ensure data is handled legally and ethically. |
+| **9.** | Data consistency | **(D) ACID Properties** | Atomicity, Consistency, Isolation, Durability are standards for reliable transactions. |
+| **10.** | Data management function | **(B) Data integrity** | Ensuring the data is accurate, consistent, and reliable throughout its lifecycle. |
+
+***
+
+## Detailed Answers to Key Concepts (Focusing on understanding)
+
+### Data Processing Cycle
+The process must always follow the sequence:
+1. **Input:** Receiving raw data (e.g., typing into a form).
+2. **Processing:** Manipulating the data (e.g., running calculations).
+3. **Output:** Presenting the results (e.g., printing a report).
+
+### Understanding the Components
+* **Data:** Raw, unorganized facts (e.g., "Smith," "25," "Paris").
+* **Information:** Processed, organized data that provides context and meaning (e.g., "John Smith, age 25, lives in Paris").
+* **Database:** The structured container holding the information.
+* **Schema:** The organizational blueprint of the database.
+
+***
+
+## Concepts Review (Based on the structure of the questions)
+
+### Data Integrity (Question 9)
+This refers to the accuracy and consistency of data over its entire lifecycle. The **ACID** properties are the formal set of rules used to guarantee this reliability:
+* **Atomicity:** A transaction must either complete entirely or not happen at all.
+* **Consistency:** A transaction must move the database from one valid state to another.
+* **Isolation:** Concurrent transactions must not interfere with each other.
+* **Durability:** Once a transaction is committed, it must remain permanent, even in case of system failure.
+
+### Data Governance (Question 8)
+Governance is the overarching management structure. It involves establishing **policies, procedures, and roles** to ensure compliance (legal/ethical) and high quality.
+
+### Types of Data Models (Question 7)
+The structure of data must be defined:
+* **Schema:** The structural blueprint (e.g., defining that the 'CustomerID' field must contain only numbers).
+* **Model:** The conceptual framework (e.g., Entity-Relationship Model).
+
+***
+
+
