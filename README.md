@@ -323,4 +323,179 @@ The structure of data must be defined:
 
 ***
 
+***
+
+# UNIT - 4 📝 Self-Assessment Questions (Answers)
+
+The correct answers for the multiple-choice questions are:
+
+1.  **Which of the following provides the interface to access the services of the operating system?**
+    **(b) System call**
+2.  **What is Microsoft window?**
+    **(a) An operating system** (Windows is an operating system, though it contains graphical programs.)
+3.  **What is the use of directory structure in the operating system?**
+    **(b) It is used to store folders and files hierarchically.**
+4.  **Which of the following operating system runs on the server?**
+    **(d) Network OS** (Servers typically run Network Operating Systems.)
+5.  **The operating system work between**
+    **(a) User and computer**
+6.  **Which of the following operating systems supports only real-time applications?**
+    **(c) Real-time OS**
+7.  **Which of the following is/are the functions of the operating system?**
+    **(d) All i, ii, iii, and iv**
+8.  **__________ is a large kernel containing virtually the complete operating system, including scheduling, file system, device drivers, and memory management.**
+    **(b) Monolithic kernel**
+9.  **______________ is a kind of system software designed to help analyze, configure, optimize and maintain the computer.**
+    **(d) Utility software**
+10. **Which of the following offer(s) visualization of disk space usage by getting the size for each folder (including subfolders) and files in folder or drive.**
+    **(b) Disk space analyser**
+11. **_______ makes a terminal emulator window with a UNIX login session inside, just like a miniature terminal.**
+    **(a) xterm**
+12. **____________ focuses on how computer infrastructure (including computer hardware, OS, & application software & data storage) operates.**
+    **(c) Application software** (Note: While the OS manages the infrastructure, the question context often refers to how the *user* interacts with or utilizes the entire stack, which is facilitated by applications.)
+13. **___________ make a copy of all information stored on a disk, and restore either the entire disk (e.g. in an event of disk failure) or selected files (e.g. in an event of accidental deletion).**
+    **(b) Backup utilities**
+14. **The access permissions on a file control what can be done to the file’s contents are:**
+    **(b) File access permissions**
+15. **The ability of an OS to have more than one program (task) open at one time is called _______.**
+    **(c) multitasking**
+
+***
+
+# 📘 Review Questions (Detailed Answers)
+
+### 1. What is an operating system? Give its types.
+
+**Definition:**
+An Operating System (OS) is system software that manages computer hardware and provides a platform for running application software. It acts as an intermediary or resource manager between the user/application programs and the 
+physical computer hardware. Its primary role is to make the computer usable and efficient by abstracting the complex hardware details from the user.
+
+**Types of Operating Systems:**
+
+1.  **Batch OS:** Processes jobs (batches) together without manual intervention. No direct user interaction is possible while the job is running.
+2.  **Time-Sharing OS:** Allows multiple users/programs to share the computer resources simultaneously by quickly switching the CPU among them (time slicing).
+3.  **Real-Time OS (RTOS):** Used for applications that require deterministic and predictable timing (e.g., medical equipment, industrial control). Failure to complete a task within a strict time deadline results in system 
+failure.
+4.  **Distributed OS:** Manages a collection of independent, networked computers (nodes) and makes them appear to the user as a single, cohesive computing system.
+5.  **Network OS (NOS):** Supports resource sharing (files, printers, etc.) over a network, allowing multiple users to access shared resources centrally.
+
+---
+
+### 2. Define System Calls. Give their types also.
+
+**Definition:**
+A **System Call** is the programmatic way that a computer program requests a service from the operating system's kernel. When a user program needs to perform a critical operation that requires hardware access or managed resources 
+(like creating a file, allocating memory, or communicating over a network), it cannot do it directly. Instead, it must issue a system call, which triggers a controlled transition from the user mode (where the application runs) to 
+the kernel mode (where the OS operates).
+
+**Types of System Calls (based on function):**
+
+1.  **Process Control:** Creating, terminating, or loading processes (e.g., `fork()`, `exit()`).
+2.  **File Management:** Creating, deleting, reading, or writing files (e.g., `open()`, `read()`, `write()`).
+3.  **Device Management:** Interacting with I/O devices (e.g., sending data to a printer).
+4.  **Information Maintenance:** Getting system time or retrieving process IDs.
+5.  **Communication:** Exchanging data between processes (Inter-Process Communication - IPC).
+
+---
+
+### 3. What are the different functions of an operating system?
+
+The primary functions of an OS revolve around resource management, efficiency, and providing a usable environment:
+
+1.  **Process Management:** Managing the life cycles of processes (loading, scheduling, executing, terminating). It allocates CPU time to various processes efficiently.
+2.  **Memory Management:** Allocating and deallocating primary memory (RAM) space among various running programs to ensure that processes do not interfere with each other's memory space.
+3.  **File Management:** Providing a consistent, abstract view of data storage. It organizes files into a logical structure (directories/folders) and handles the creation, retrieval, naming, and protection of data.
+4.  **I/O (Input/Output) Management:** Acting as an interface between the computer and peripheral devices (keyboard, mouse, disk drives). It uses drivers to translate high-level OS requests into hardware-specific commands.
+5.  **Security and Protection:** Protecting the system resources from unauthorized access, malicious programs, or errors, using authentication (user logins) and access control lists.
+6.  **User Interface Provision:** Providing the methods (GUI or CLI) through which the user can interact with the machine.
+
+---
+
+### 4. What are user interfaces in the operating system?
+
+A User Interface (UI) is the point of interaction between the user and the computer system. It dictates how the user provides instructions and receives output.
+
+**Key Types:**
+
+1.  **Graphical User Interface (GUI):** Uses visual metaphors like icons, windows, and pointers. Users interact using a mouse or trackpad (e.g., Windows, macOS). It is highly intuitive for beginners.
+2.  **Command-Line Interface (CLI):** Requires users to type precise textual commands and parameters into a terminal window. It is powerful, precise, and resource-efficient (e.g., Command Prompt, Bash/Terminal).
+
+---
+
+### 5. Define GUI and Command-Line?
+
+**GUI (Graphical User Interface):**
+A GUI is an interactive system that represents information and actions using **visual elements** (icons, menus, buttons, etc.). Instead of typing commands, the user *points* and *clicks*. This makes the OS very user-friendly and 
+accessible to non-technical users.
+
+**CLI (Command-Line Interface):**
+A CLI is a text-based interface where the user must input specific, structured **text commands** to instruct the computer. The OS responds with text output. While having a steeper learning curve, CLIs are extremely powerful, allow 
+for scripting automation, and are often preferred by system administrators and programmers.
+
+---
+
+### 6. What is the setting of focus?
+
+In the context of operating systems and applications, **focus** refers to which component or module currently has the authority to receive input, execute commands, or direct operations.
+
+When a user clicks on an application window, that application gains **focus**. While it has focus, all subsequent inputs (like typing) are directed to that specific window, and the system treats it as the active element. The OS 
+manages and shifts this focus dynamically between different running processes.
+
+---
+
+### 7. Define the xterm Window and Root Menu?
+
+**xterm Window:**
+`xterm` is a popular, terminal emulator program used in Unix-like operating systems (like Linux). Its primary function is to provide a simulated, miniature console environment—a graphical window that looks and behaves exactly like 
+an old-school, dedicated terminal device. It allows users to execute command-line programs and sessions (like a UNIX login) within a graphical desktop environment (GUI).
+
+**Root Menu (or Root Access):**
+"Root" refers to the highest level of privilege or administrative authority within a Unix-like operating system. The **Root Menu** (or executing as the root user) grants access to all system functions, including the ability to 
+read, write, modify, and delete any file or change any system setting, regardless of ownership. Due to its immense power, using root access requires extreme care, as a single mistake can permanently destabilize the entire 
+operating system.
+
+---
+
+### 8. What is sharing of files? Also, give the commands for sharing the files?
+
+**File Sharing:**
+File sharing is the mechanism that allows multiple authorized users or clients connected to a network to access and utilize the same files or data stored on a central server. The OS and network protocols manage the process of 
+controlling access (who can see it) and maintaining data integrity (preventing simultaneous conflicting changes).
+
+**Common Commands for Managing Sharing (Linux/Unix):**
+
+1.  **`chmod` (Change Mode):** Used to change the permissions (read, write, execute) of a file or directory for different user classes (owner, group, others).
+    *Example: `chmod 755 myfile.txt`*
+2.  **`chown` (Change Owner):** Used to change the user or group ownership of a file.
+    *Example: `chown username:groupname myfile.txt`*
+3.  **Network Share Commands (Depends on OS/Protocol):** On modern systems, sharing is often configured via network protocols (like Samba or NFS), rather than a single command. Specific OS tools are used to set up the shared 
+folder and map permissions for network users.
+
+---
+
+### 9. Give steps of Managing hardware in Operating Systems.
+
+Hardware management is the process by which the OS detects, controls, and allocates physical resources (CPU, I/O devices, memory) to running processes.
+
+**Steps of Hardware Management:**
+
+1.  **Detection:** The OS detects and identifies the connected hardware resources (CPU core count, RAM size, existence of peripherals like printers or GPUs).
+2.  **Initialization:** The OS initializes the hardware devices, loading necessary drivers and ensuring they are ready to operate (e.g., setting up basic communication protocols).
+3.  **Resource Allocation:** When a process requests hardware (e.g., "I need 500MB of RAM and access to the network card"), the OS allocates the specific resource from its pool and tracks its usage.
+4.  **Driver Management:** The OS loads and uses specialized software modules (device drivers) that translate the high-level requests from the OS kernel into low-level electrical signals that the specific hardware device 
+understands.
+5.  **Scheduling and Arbitration:** The OS kernel acts as an arbiter, deciding which process gets to use a shared resource (like the CPU) and for how long, ensuring fair and efficient use.
+
+---
+
+### Summary of Key Concepts
+
+| Component | Function | Example |
+| :--- | :--- | :--- |
+| **Kernel** | The core of the OS; manages hardware and resources. | Scheduler, Memory Manager |
+| **Device Driver** | Software that allows the OS to communicate with specific hardware. | Printer Driver, Graphics Card Driver |
+| **Resource Management** | Allocating and tracking usage of CPU, Memory, and I/O devices. | Scheduling the process execution time. |
+| **Abstraction** | Hiding the complex hardware details from the user program. | A user writes `print("Hello")` without knowing the exact wiring needed for the screen. |
+
+
 
