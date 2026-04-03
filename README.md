@@ -497,5 +497,160 @@ understands.
 | **Resource Management** | Allocating and tracking usage of CPU, Memory, and I/O devices. | Scheduling the process execution time. |
 | **Abstraction** | Hiding the complex hardware details from the user program. | A user writes `print("Hello")` without knowing the exact wiring needed for the screen. |
 
+***
+
+## UNIT - 5 🖥  Self-assessment Questions (Answers)
+
+**1. What is Data Communication?**
+(a) The transmission of data from one location to another for direct use or further processing.
+
+**2. The three classes of channel that makes up bandwidth are:**
+(c) Narrow-band, voice-band, broad-band channels.
+
+**3. A data communication system consists of**
+(b) A system made up of hardware, software and communication facilities, computer terminals, and input/output devices linked locally or globally.
+
+**4. Digital communication is the ______ transfer of data over a point to point or point to multipoint communication channel.**
+(c) physical
+
+**5. A bandwidth determines the volume of data that can be transmitted in a given time?**
+(a) True
+
+**6. LAN is a computer network that connects computers and devices in a _______.**
+(a) limited geographical area
+
+**7. A modem is a device that ____________ an analog carrier signal to encode digital information, and also ___________ a carrier signal to decode the transmitted information.**
+(d) modulates, demodulates
+
+**8. A _____________ is a computer network that usually spans a city or a large campus.**
+(b) Metropolitan Area Network (MAN)
+
+**9. IEEE 802.11, Wi-Fi, and HiperLAN are the standards for _______________.**
+(d) Wireless LAN
+
+**10. WISP stands for:**
+(b) Wireless Internet Service Providers
+
+**11. A digital signal can be transmitted over a dedicated connection between two or more users. In order to transmit analog data, it must first be converted into a digital form. This process is called as ____________.**
+(c) Sampling
+
+**12. The data transmission speed for ___________ ranges from 155 Mbps to 600 Mbps.**
+(c) Asynchronous Transfer Mode (ATM)
+
+**13. ASK is a result of a combination of shift keying and**
+(b) amplitude modulation
+
+**14. Which of the following is not a digital-to-analog conversion?**
+(d) AM (AM is an analog modulation technique)
+
+**15. Integrated Services Digital Network uses the _______ technique to carry three or more data signals at once through the telephone line.**
+(d) multiplexing
+
+***
+
+## 📚 5.10 Review Questions (Detailed Answers)
+
+### 1. What do you mean by data communication?
+Data communication is the process of transmitting information (data) from a sender (source) to a receiver (destination) using an intermediate physical or wireless medium (channel).
+**Key components:**
+1. **Message:** The actual information being communicated (text, image, video).
+2. **Sender:** The device that generates the message (e.g., a computer).
+3. **Receiver:** The device that accepts and interprets the message (e.g., another computer).
+4. **Medium/Channel:** The physical path over which the data travels (e.g., copper wire, fiber optic cable, air).
+5. **Protocol:** A set of rules that govern how communication takes place (ensuring both ends understand the format).
+
+### 2. Explain the general model of data communication. What is the role of the modem in it?
+**General Model:**
+The general model describes the flow of information through five components:
+1. **Source:** Originates the data.
+2. **Transmitter:** Converts the data signal into a transmission signal suitable for the channel (e.g., encoding it for electrical transmission).
+3. **Medium/Channel:** The physical path (e.g., cable, air).
+4. **Receiver:** Accepts the signal from the medium and converts it back into a usable signal.
+5. **Destination:** The final recipient that interprets the signal back into data.
+
+**Role of the Modem:**
+A modem (Modulator-Demodulator) acts as a crucial translator. Since most communication lines (like standard telephone lines) transmit *analog* electrical signals, but modern computers generate *digital* signals, the modem performs 
+two functions:
+1. **Modulation:** It takes the high-frequency digital signal from the computer and *modulates* it onto the low-frequency analog carrier wave, allowing it to travel over the line.
+2. **Demodulation:** At the receiving end, it receives the analog signal and *demodulates* it, extracting the original digital information so the receiver can understand it.
+
+### 3. Explain the general model of digital transmission of data. Why is analog data sampled?
+**General Model of Digital Transmission:**
+The process involves converting continuous analog information into discrete digital pulses:
+1. **Source:** Produces continuous analog signals (e.g., voice, sound).
+2. **Sampling:** The continuous signal is measured at regular, discrete intervals, turning it into a series of numerical values.
+3. **Quantization:** The sampled values are assigned discrete numerical levels (bits).
+4. **Encoding/Digital Transmission:** These discrete bits are packaged and transmitted using digital pulses (1s and 0s).
+5. **Decoding/Reception:** The receiver reconstructs the original signal from the discrete digital bits.
+
+**Why is analog data sampled?**
+Analog data (like a human voice) is a **continuous** wave that changes smoothly over time. Digital systems, however, operate using **discrete** values (on or off, 1 or 0).
+To transmit analog data digitally, sampling is necessary to convert the continuous signal into a series of discrete, manageable data points. The sampling rate must be high enough (following the Nyquist-Shannon sampling theorem) to 
+accurately capture all the frequencies present in the original analog signal, thus avoiding data loss or distortion.
+
+### 4. What do you mean by digital modulation? Explain various digital modulation techniques.
+**Digital Modulation:**
+Digital modulation is the process of mapping digital data bits (0s and 1s) onto a high-frequency analog carrier wave. This allows the digital information to be transmitted efficiently over physical media.
+
+**Various Techniques:**
+The three primary techniques are based on which property of the carrier wave (Amplitude, Frequency, or Phase) is altered to represent the bits:
+
+1. **Amplitude Shift Keying (ASK):**
+    *   The **amplitude** (height) of the carrier wave is changed to represent the data.
+    *   *Example:* A high amplitude might represent a '1', while no amplitude (or low amplitude) might represent a '0'.
+2. **Frequency Shift Keying (FSK):**
+    *   The **frequency** (how many waves pass per second) of the carrier wave is changed.
+    *   *Example:* A higher frequency might represent a '1', while a lower frequency might represent a '0'.
+3. **Phase Shift Keying (PSK):**
+    *   The **phase** (the starting point of the wave cycle) of the carrier wave is shifted.
+    *   *Example:* A phase shift of $0^\circ$ might represent a '1', while a phase shift of $180^\circ$ might represent a '0'.
+
+### 5. What are computer networks?
+A computer network is a system that connects two or more computing devices (such as computers, servers, printers, and phones) together for the purpose of sharing resources, exchanging data, and facilitating communication.
+
+**Purpose of Networking:**
+*   **Resource Sharing:** Sharing expensive hardware (like printers) or software licenses.
+*   **Data Exchange:** Sending emails, files, and accessing databases quickly.
+*   **Communication:** Enabling real-time communication (VoIP, video conferencing).
+*   **Centralized Storage:** Providing centralized storage and backup for data.
+
+### 6. How data communication is done using standard telephone lines?
+Standard telephone lines are designed to carry **analog voice signals**. To transmit digital data (like computer files) over them, specialized technology is used:
+
+1. **Signal Conversion (Modem):** The digital signal from the computer is first passed through a **Modem**.
+2. **Modulation:** The modem performs **Frequency Shift Keying (FSK)** or **Amplitude Shift Keying (ASK)** to modulate the digital bits onto the analog carrier wave.
+3. **Transmission:** This modulated signal is sent over the copper wires, traveling as an electrical analog signal.
+4. **Demodulation:** At the receiving end, a demodulator reverses the process, stripping away the carrier wave and reconstructing the original digital data signal.
+
+### 7. Broadcast/Area Networks
+**(This question was likely meant to describe different types of networks, such as LAN, MAN, or WAN)**
+
+If the question intended to compare network types:
+*   **LAN (Local Area Network):** Covers a small, confined geographical area (e.g., a single office floor or home). Data transfer rates are very high.
+*   **MAN (Metropolitan Area Network):** Spans an entire city or large campus. Connects multiple LANs together.
+*   **WAN (Wide Area Network):** Covers vast geographical areas (e.g., connecting corporate offices across continents). Relies heavily on public infrastructure (like fiber optic lines leased from carriers).
+
+### 8. Digital vs. Analog Signals
+**(This question was likely meant to contrast signal types)**
+
+*   **Analog Signals:** Vary continuously in strength over time (e.g., sound waves, traditional radio signals). They are susceptible to noise and degradation over long distances.
+*   **Digital Signals:** Represent information using discrete, defined values (usually binary 1s and 0s). They are much more resilient to noise and can be regenerated perfectly over long distances. **Modern communication systems 
+favor digital transmission.**
+
+### 9. Data Compression
+**(This question was likely meant to define the process)**
+
+**Data Compression** is the process of encoding information using fewer bits than was originally used, without sacrificing necessary information.
+*   **Lossless Compression:** No data is lost. When the file is decompressed, it is perfect replica of the original (e.g., ZIP files, PNG images).
+*   **Lossy Compression:** Some data is permanently discarded to achieve much smaller file sizes. This is acceptable for media where perfect fidelity is not crucial (e.g., JPEG images, MP3 audio files).
+
+### 10. Network Protocols
+**(This question was likely meant to define the rules)**
+
+**Network Protocols** are the established rules and formats that govern how data is transmitted and received between different devices on a network. They ensure that communication is orderly, understandable, and standardized.
+*   **Example:** The **TCP/IP Suite** is the most famous protocol set. **TCP** (Transmission Control Protocol) manages reliable data delivery, while **IP** (Internet Protocol) manages the addressing and routing of packets to 
+ensure they reach the correct destination.
+
+
 
 
